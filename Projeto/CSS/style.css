@@ -4,9 +4,47 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
+@media screen and (max-width: 1000px){
+    .menu, .header1, .container-logo{
+        display: none;
+    }
+}
+
+.menu-mobile{
+    background-color: pink;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    width: 70%;
+}
+
+.texto h1{
+    margin-top: 250px;
+    margin-bottom: 250px;
+    font-size: 150px;
+    font-family: "Honk", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+    "MORF" 15,
+    "SHLN" 50;
+}
+
+.logo-texto h1{
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
 main{
-    background-color: #ffffff;
-    background: linear-gradient(to bottom, #f8f8f8, #a899ff);
     width: 70%;
     height: 100vh;
     margin: auto;
@@ -15,7 +53,7 @@ main{
 
 body{
     background-color: #ffffff;
-    background: linear-gradient(to bottom, #f8f8f8, #a899ff);
+    background: linear-gradient(to right, #eeddff, #914dff);
     width: 100%;
     height: 100vh;
     font-family: arial,verdana;
@@ -36,7 +74,6 @@ h2{
 
 h1{
     text-align: center;
-    text-transform: uppercase;
     font-size: 32px;
 }
 
@@ -59,7 +96,7 @@ strong{
 }
 
 .poatan1{
-    box-shadow: 0px 0px 10px rgb(0, 214, 252);
+    box-shadow: 0px 0px 10px rgb(73, 0, 156);
     border-radius: 10px;
     margin-bottom: 20px;
     margin-top: 20px;
@@ -89,18 +126,19 @@ header{
 .header1{
     width: 100%;
     background-color: #ffffff;
-    background: linear-gradient(to right, #f8f8f8, #2600ff);
-    width: 100%;
+    background: linear-gradient(to right, #e4e4e4, #5500b6);
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 20px 0px;
     margin-top: 10px;
     border-radius: 20px;
+
 }
 
 .square1{
     background-color: white;
+    background: linear-gradient(to bottom, #f8f8f8, #c2c2c2);
     margin-bottom: 20px;
     justify-content: center;
     align-items: center;
@@ -138,21 +176,43 @@ header{
 }
 
 .logo-imagem{
-    background-color: black;
-    border-radius: 25px;
-    width: 50px;
-    height: 50px;
+    font-size: 24px;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+.logo-imagem ul{
+    text-decoration: none;
+}
+
+.logo-imagem li a{
+    font-size: 24px;
+    list-style: none;
+    text-decoration: aqua;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+.logo-imagem li a:hover{
+    background-color: aquamarine;
 }
 
 .logo-texto{
-    margin-left: 20px;
+    margin-left: 70px;
     color: white;
 }
 
 .container-logo{
+    margin-left: 40px;
     display: flex;
     align-items: center;
 }
+
 
 .menu li{
     display: inline-block;
